@@ -6,11 +6,12 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Lottie from "react-lottie"
 import animationData from "../assets/lotties/education.json"
-import ReactTypingEffect from "react-typing-effect"
 
 import { motion } from "framer-motion"
 import tw, { styled } from "twin.macro"
 import { css, jsx, keyframes } from "@emotion/core"
+
+const ReactTypingEffect = React.lazy(() => import("react-typing-effect"))
 
 const Button = styled.button`
   ${tw`bg-blue-500 hover:bg-blue-800 text-white p-2 rounded`}
@@ -89,11 +90,15 @@ const IndexPage = () => (
       >
         eDUCATIVO
       </h2>
-      <ReactTypingEffect
-        speed={100}
-        typingDelay={2500}
-        text="Acercando las clases online a hogares vulnerables." //text=["Hello.", "World!"]
-      />
+      {typeof window !== "undefined" && (
+        <React.Suspense fallback={<div />}>
+          <ReactTypingEffect
+            speed={100}
+            typingDelay={2500}
+            text="Acercando las clases online a hogares vulnerables." //text=["Hello.", "World!"]
+          />
+        </React.Suspense>
+      )}
     </div>
     <Lottie options={defaultOptions} height={400} width={400} />
   </PageContainer>
