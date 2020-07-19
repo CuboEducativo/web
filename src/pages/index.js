@@ -8,6 +8,11 @@ import Lottie from "react-lottie"
 import animationData from "../assets/lotties/education.json"
 
 import { motion } from "framer-motion"
+import tw, { styled } from "twin.macro"
+
+const Button = styled.button`
+  ${tw`bg-blue-500 hover:bg-blue-800 text-white p-2 rounded`}
+`
 
 const defaultOptions = {
   autoplay: true,
@@ -22,7 +27,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>{" "}
+    <p>Now go build something great.</p>
+    <Button>Activate</Button>
     <Lottie options={defaultOptions} height={400} width={400} />
     <motion.div
       animate={{
