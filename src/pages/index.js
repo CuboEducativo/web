@@ -100,9 +100,7 @@ const IndexPage = () => {
         <p>hoka</p>
       </Button>
       <IsVisible once>
-        {isVisible => (
-          <div>{isVisible ? <CountUp end={100} /> : <span>0</span>}</div>
-        )}
+        {isVisible => <>{isVisible ? <CountUp end={100} /> : <span>0</span>}</>}
       </IsVisible>
     </Container>
   )
