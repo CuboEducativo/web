@@ -26,7 +26,7 @@ export default () => {
             ${tw`flex flex-col items-center text-4xl text-secondary font-bold mb-12`}
           `}
         >
-          Que hacemos
+          Como lo hacemos
           <span
             css={css`
               ${tw`bg-primary h-1 w-20 block mt-4`}
@@ -55,15 +55,16 @@ export default () => {
                 ${tw`font-semibold text-2xl text-secondary mb-2`}
               `}
             >
-              Analysis
+              Selección
             </h4>
             <p
               css={css`
                 ${tw`text-center text-secondary-700 leading-relaxed`}
               `}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est
+              Se selecciona a un estudiante que tenga la necesidad, ya sea de
+              tener conexión a internet y/o de contar con un equipo para
+              estudiar.
             </p>
           </div>
           <div
@@ -83,15 +84,15 @@ export default () => {
                 ${tw`font-semibold text-2xl text-secondary mb-2`}
               `}
             >
-              Execution
+              Armado
             </h4>
             <p
               css={css`
                 ${tw`text-center text-secondary-700 leading-relaxed`}
               `}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est
+              Se arma y configura el equipo de acuerdo a las necesidades del
+              estudiante
             </p>
           </div>
           <div
@@ -111,15 +112,15 @@ export default () => {
                 ${tw`font-semibold text-2xl text-secondary mb-2`}
               `}
             >
-              Success
+              Entrega
             </h4>
             <p
               css={css`
                 ${tw`text-center text-secondary-700 leading-relaxed`}
               `}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              imperdiet est
+              Se entrega y monitorea el impacto y efectividad del equipo
+              entregado
             </p>
           </div>
         </div>

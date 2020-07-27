@@ -10,6 +10,7 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Team from "../components/team"
 import Navbar from "../components/navbar"
+import About from "../components/about"
 import Description from "../components/description"
 import IsVisible from "react-is-visible"
 
@@ -35,7 +36,7 @@ const IndexPage = () => {
       <SEO title="Inicio" />
       <Navbar />
       <Hero />
-      <p>Hola, probando la tipografia</p>
+      <About />
       <Description />
       <Team />
       <IsVisible once>
