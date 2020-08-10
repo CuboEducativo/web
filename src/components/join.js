@@ -45,15 +45,15 @@ export default () => {
                 ${tw`text-lg text-secondary-700 mb-4`}
               `}
             >
-              Nada de esto sería posible sin los voluntarios de todas parte de
-              Chile que donan componentes y ayudan a mejorar la plataforma.
+              ¿Quieres ayudar a disminur la brecha educativa mediante el uso de
+              la tecnología?
             </p>
             <p
               css={css`
                 ${tw`text-lg text-secondary-700`}
               `}
             >
-              Tú puedes ser el cambio.
+              ¡Con la ayuda de tod@s podemos lograrlo!
             </p>
           </div>
           <div

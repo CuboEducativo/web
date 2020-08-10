@@ -5,9 +5,8 @@ import { css, jsx, keyframes } from "@emotion/core"
 export default () => {
   return (
     <div
-      id="about-us"
       css={css`
-        ${tw`bg-gray-400 mt-32 py-12`}
+        ${tw`bg-gray-400 py-12 mt-0`}
       `}
     >
       <div
@@ -54,9 +53,10 @@ export default () => {
                 ${tw`text-lg text-secondary-700 mb-4`}
               `}
             >
-              Entregamos computadores de bajo costo a base de Raspberry PI y
-              componentes donados, configurados para entregar el contenido del
-              plan de estudio del Ministerio de Educación, Gobierno de Chile.
+              Creamos computadores de bajo costo, re-utilizando parte del
+              hardware, con una plataforma educativa off-line, destinados a
+              niños y niñas de colegios vulnerables con el fin de disminuir la
+              brecha educacional acrecentada por el contexto nacional.
             </p>
             <p
               css={css`

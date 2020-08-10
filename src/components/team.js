@@ -105,7 +105,7 @@ export default () => {
   return (
     <div
       css={css`
-        ${tw`container mx-auto my-10 flex flex-col justify-center items-center`}
+        ${tw`container mx-auto py-10 flex flex-col justify-center items-center`}
       `}
     >
       <h3

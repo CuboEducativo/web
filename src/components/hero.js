@@ -57,9 +57,9 @@ export default () => {
         {typeof window !== "undefined" && (
           <React.Suspense fallback={<div />}>
             <ReactTypingEffect
-              speed={100}
-              typingDelay={2500}
-              text="Acercando las clases online a hogares vulnerables."
+              speed={80}
+              typingDelay={1500}
+              text="Contribuyendo al desarrollo de niños y niñas mejorando la educación  chilena través de la tecnología."
             />
           </React.Suspense>
         )}
