@@ -124,7 +124,7 @@ export default () => {
       </h3>
       <div
         css={css`
-          ${tw`grid lg:grid-cols-3 grid-cols-2 gap-8 align-middle w-4/5 mx-auto`}
+          ${tw`grid lg:grid-cols-3 grid-cols-1 gap-8 align-middle w-4/5 mx-auto`}
         `}
       >
         <TeamCard
