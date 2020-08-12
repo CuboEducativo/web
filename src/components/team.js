@@ -20,7 +20,7 @@ const TeamCard = ({ name, position, description, img }) => {
       >
         <Img
           fluid={img}
-          alt=""
+          alt={`${name} Avatar`}
           css={css`
             ${tw`h-full w-full`}
           `}
