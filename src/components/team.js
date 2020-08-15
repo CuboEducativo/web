@@ -131,9 +131,9 @@ export default () => {
           name="Javiera Bustos Alvial"
           position="Estudiante de Ingeniería Civil Industrial UAI"
           description="Feminista, Cañetina, le gusta leer, programar, la fotografía, el campo,
-        viajar y hacer cursos online que jamás termina. Quiere cambiar el mundo
-        devolviendo la mano a quienes más lo necesitan. La pueden encontrar en
-        insta y tiktok como @javduzen"
+          viajar y hacer cursos online que jamás termina. Quiere cambiar el mundo
+          devolviendo la mano a quienes más lo necesitan. La pueden encontrar en
+          insta y tiktok como @javduzen"
           img={javi}
         />
         <TeamCard
@@ -165,7 +165,9 @@ export default () => {
         <TeamCard
           name="Gabriel Pérez"
           position="Estudiante de Ingeniería Civil Industrial UAI"
-          description="Soñador, le gusta la música y hacer cosas nuevas. Un poco disperso. Cree que con una educación de calidad y colaborativa se puede mejorar muchas cosas. Puedes encontrarlo en LinkedIn como @GabrielPerezAguirre o en Instagram como @GabrieeelPerez"
+          description="Soñador, le gusta la música y hacer cosas nuevas. Un poco disperso.
+          Cree que con una educación de calidad y colaborativa se puede mejorar muchas cosas. 
+          Puedes encontrarlo en LinkedIn como @GabrielPerezAguirre o en Instagram como @GabrieeelPerez"
           img={gabriel}
         />
       </div>
