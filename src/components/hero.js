@@ -59,7 +59,7 @@ export default () => {
             <ReactTypingEffect
               speed={80}
               typingDelay={1500}
-              text="Contribuyendo al desarrollo de niños y niñas mejorando la educación  chilena través de la tecnología."
+              text="Contribuyendo al desarrollo de niños y niñas mejorando la educación chilena través de la tecnología."
             />
           </React.Suspense>
         )}

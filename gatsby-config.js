@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Cubo eDucativo`,
-    description: `Computadores`,
+    description: `Contribuyendo al desarrollo de niños y niñas mejorando la educación  chilena través de la tecnología.`,
     author: `@Yhozen`,
   },
   plugins: [
