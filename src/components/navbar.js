@@ -1,9 +1,7 @@
 import React from "react"
-import tw, { styled } from "twin.macro"
-import { css, jsx, keyframes } from "@emotion/core"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Image from "gatsby-image"
+import tw from "twin.macro"
+import { css } from "@emotion/core"
+import { Link } from "gatsby"
 
 export default () => {
   return (
@@ -109,23 +107,24 @@ export default () => {
                 ${tw`mr-3`}
               `}
             >
-              <a
+              <Link
                 css={css`
                   ${tw`inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 px-4`}
                 `}
-                href="#"
+                to="/blog"
               >
                 link
-              </a>
+              </Link>
             </li>
-            <button
+            <Link
+              to="/donar"
               id="navAction"
               css={css`
                 ${tw`mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 bg-primary`}
               `}
             >
               Action
-            </button>
+            </Link>
           </ul>
         </div>
       </div>
