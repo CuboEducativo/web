@@ -1,6 +1,6 @@
 import React from "react"
-import tw, { styled } from "twin.macro"
-import { css, jsx, keyframes } from "@emotion/core"
+import tw from "twin.macro"
+import { css } from "@emotion/core"
 import Img from "gatsby-image"
 
 import Card from "./card"

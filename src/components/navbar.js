@@ -1,5 +1,5 @@
 import React from "react"
-donimport tw from "twin.macro"
+import tw from "twin.macro"
 import { css } from "@emotion/core"
 import { Link } from "gatsby"
 
@@ -20,25 +20,7 @@ export default () => {
           css={css`
             ${tw`pl-4 flex items-center`}
           `}
-        >
-          <a
-            css={css`
-              ${tw`text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl`}
-            `}
-            href="#"
-          >
-            <svg
-              css={css`
-                ${tw`h-6 w-6 inline-block fill-current text-orange-700`}
-              `}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13 8V0L8.11 5.87 3 12h4v8L17 8h-4z" />
-            </svg>
-          </a>
-        </div>
-
+        />
         <div
           css={css`
             ${tw`block lg:hidden pr-4`}
@@ -79,29 +61,16 @@ export default () => {
                 ${tw`mr-3`}
               `}
             >
-              <a
+              <Link
                 css={css`
                   ${tw`inline-block py-2 px-4 text-black font-bold no-underline`}
                 `}
-                href="#"
+                to="/"
               >
-                Active
-              </a>
+                Inicio
+              </Link>
             </li>
-            <li
-              css={css`
-                ${tw`mr-3`}
-              `}
-            >
-              <a
-                css={css`
-                  ${tw`inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 px-4`}
-                `}
-                href="#"
-              >
-                link
-              </a>
-            </li>
+
             <li
               css={css`
                 ${tw`mr-3`}
@@ -113,7 +82,7 @@ export default () => {
                 `}
                 to="/blog"
               >
-                link
+                Blog
               </Link>
             </li>
             <Link
@@ -123,7 +92,7 @@ export default () => {
                 ${tw`mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 bg-primary`}
               `}
             >
-              Action
+              Donar
             </Link>
           </ul>
         </div>
