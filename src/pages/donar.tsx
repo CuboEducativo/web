@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { PageProps, graphql, Link } from "gatsby"
 import Lottie from "react-lottie"
 import tw from "twin.macro"
@@ -78,7 +78,11 @@ const getSizes = width => {
 
 const Donar: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   const width = useWindowWidth()
-  const [firstSize, secondSize] = getSizes(width)
+  const [sizes, setSizes] = useState([100, 100])
+  useEffect(() => {
+    setSizes(getSizes(width))
+  }, [width])
+  const [firstSize, secondSize] = sizes
   return (
     <Container>
       <SEO title="Donaciones" />
