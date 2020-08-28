@@ -6,7 +6,6 @@ import tw from "twin.macro"
 import dayjs from "dayjs"
 import "dayjs/locale/es"
 
-import Img from "gatsby-image"
 import Container from "../../components/container"
 import { normalizePath } from "../../utils/get-url-path"
 

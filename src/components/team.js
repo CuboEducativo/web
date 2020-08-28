@@ -3,10 +3,41 @@ import tw from "twin.macro"
 import { css } from "@emotion/core"
 import Img from "gatsby-image"
 
-import Card from "./card"
+import { ImHome } from "react-icons/im"
+import { SiTiktok, SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si"
+
 import useTeamImages from "../hooks/useTeamImages"
 
-const TeamCard = ({ name, position, description, img }) => {
+// <li>
+//   <a
+//     href=""
+//     css={css`
+//       ${tw`flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800`}
+//     `}
+//   >
+//     <i
+//       css={css`
+//         ${tw``}
+//       `}
+//     ></i>
+//   </a>
+// </li>
+
+const SocialNetIcon = props => {
+  if (props.name == "tiktok") return <SiTiktok />
+  if (props.name == "facebook") return <SiFacebook />
+  if (props.name == "instagram") return <SiInstagram />
+  if (props.name == "linkedin") return <SiLinkedin />
+  return <ImHome />
+}
+
+const TeamCard = ({
+  name,
+  position,
+  description,
+  img,
+  socialNetworks = [],
+}) => {
   return (
     <div
       css={css`
@@ -55,48 +86,18 @@ const TeamCard = ({ name, position, description, img }) => {
           ${tw`flex flex-row mt-4 space-x-2`}
         `}
       >
-        <li>
-          <a
-            href=""
-            css={css`
-              ${tw`flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800`}
-            `}
-          >
-            <i
+        {socialNetworks.map(social => (
+          <li>
+            <a
+              href={social.link}
               css={css`
-                ${tw``}
+                ${tw`flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800`}
               `}
-            ></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href=""
-            css={css`
-              ${tw`flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800`}
-            `}
-          >
-            <i
-              css={css`
-                ${tw``}
-              `}
-            ></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href=""
-            css={css`
-              ${tw`flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800`}
-            `}
-          >
-            <i
-              css={css`
-                ${tw` `}
-              `}
-            ></i>
-          </a>
-        </li>
+            >
+              <SocialNetIcon name={social.name} />
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   )
@@ -135,6 +136,16 @@ export default () => {
           devolviendo la mano a quienes más lo necesitan. La pueden encontrar en
           insta y tiktok como @javduzen"
           img={javi}
+          socialNetworks={[
+            {
+              name: "instagram",
+              link: "https://www.instagram.com/javduzen/",
+            },
+            {
+              name: "tiktok",
+              link: "https://www.instagram.com/javduzen/",
+            },
+          ]}
         />
         <TeamCard
           name="Xavier Zuazagoitia Morán"
@@ -143,6 +154,12 @@ export default () => {
           Cree que las cosas pueden mejorar si nos ponemos realmente en el lugar del otro. Su familia es lo más importante.
           Lo pueden encontrar en Instagram como @xavierzuaza"
           img={javier}
+          socialNetworks={[
+            {
+              name: "instagram",
+              link: "https://www.instagram.com/xavierzuaza/",
+            },
+          ]}
         />
         <TeamCard
           name="Daniel Taiba"
@@ -152,6 +169,12 @@ export default () => {
           Cree que la educación es la inversion con mas retornos en la vida.
           Pueden encontrarlo en Tiktok como @danieltaiba_"
           img={daniel}
+          socialNetworks={[
+            {
+              name: "tiktok",
+              link: "https://www.linkedin.com/in/javierbustos/",
+            },
+          ]}
         />
 
         <TeamCard
@@ -161,6 +184,12 @@ export default () => {
           Participa de forma activa en una liga de futbol amateur y juega handball. Adora almorzar con su familia y tomar el cafecito de media tarde. Le gusta anotar todo.
           Encuéntralo en LinkedIn: @javierbustos"
           img={javier}
+          socialNetworks={[
+            {
+              name: "linkedin",
+              link: "https://www.linkedin.com/in/javierbustos/",
+            },
+          ]}
         />
         <TeamCard
           name="Gabriel Pérez"
@@ -169,6 +198,16 @@ export default () => {
           Cree que con una educación de calidad y colaborativa se puede mejorar muchas cosas. 
           Puedes encontrarlo en LinkedIn como @GabrielPerezAguirre o en Instagram como @GabrieeelPerez"
           img={gabriel}
+          socialNetworks={[
+            {
+              name: "instagram",
+              link: "https://www.instagram.com/gabrieeelperez/",
+            },
+            {
+              name: "linkedin",
+              link: "https://www.linkedin.com/in/gabrielperezaguirre/",
+            },
+          ]}
         />
       </div>
     </div>
