@@ -1,7 +1,6 @@
 import React from "react"
 
 import { Link } from "gatsby"
-import { Box } from "@chakra-ui/core"
 import { css } from "@emotion/core"
 import tw from "twin.macro"
 import dayjs from "dayjs"
@@ -15,8 +14,7 @@ dayjs.locale("es")
 
 function BlogPost({ data }) {
   const { nextPage, previousPage, page } = data
-  const { title, content, featuredImage, date } = page
-
+  const { title, content, date } = page
   return (
     <Container>
       <div
