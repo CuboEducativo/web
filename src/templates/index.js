@@ -11,7 +11,7 @@ import { normalizePath } from "../utils/get-url-path"
 export default ({ data, pageContext }) => (
   <Layout>
     <Stack spacing={5}>
-      {data.allWpPost.nodes.map((page) => (
+      {data.allWpPost.nodes.map(page => (
         <Box key={page.link}>
           <Link to={normalizePath(page.uri)}>
             <Box p={5} shadow="md" borderWidth="1px">
@@ -29,9 +29,9 @@ export default ({ data, pageContext }) => (
                   <Heading as="h2" size="md">
                     {page.title}
                   </Heading>
-                  {!!page.author && !!page.author.name && (
+                  {!!page?.author?.node?.name && (
                     <Heading as="h3" size="sm">
-                      Author: {page.author.name}
+                      Author: {page.author.node.name}
                     </Heading>
                   )}
 
@@ -97,6 +97,12 @@ export const query = graphql`
       nodes {
         uri
         title
+        date
+        author {
+          node {
+            name
+          }
+        }
         featuredImage {
           node {
             remoteFile {

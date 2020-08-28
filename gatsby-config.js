@@ -2,6 +2,11 @@ require("dotenv").config({
   path: `.env`,
 })
 
+var dayjs = require("dayjs")
+require("dayjs/locale/es") // load on demand
+
+dayjs.locale("es")
+
 module.exports = {
   siteMetadata: {
     title: `Cubo eDucativo`,
