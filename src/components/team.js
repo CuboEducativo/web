@@ -8,21 +8,6 @@ import { SiTiktok, SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si"
 
 import useTeamImages from "../hooks/useTeamImages"
 
-// <li>
-//   <a
-//     href=""
-//     css={css`
-//       ${tw`flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800`}
-//     `}
-//   >
-//     <i
-//       css={css`
-//         ${tw``}
-//       `}
-//     ></i>
-//   </a>
-// </li>
-
 const SocialNetIcon = props => {
   if (props.name == "tiktok") return <SiTiktok />
   if (props.name == "facebook") return <SiFacebook />
@@ -135,15 +120,11 @@ export default () => {
           description="Feminista, Cañetina, le gusta leer, programar, la fotografía, el campo,
           viajar y hacer cursos online que jamás termina. Quiere cambiar el mundo
           devolviendo la mano a quienes más lo necesitan. La pueden encontrar en
-          insta y tiktok como @javduzen"
+          instacomo @javduzen"
           img={javi}
           socialNetworks={[
             {
               name: "instagram",
-              link: "https://www.instagram.com/javduzen/",
-            },
-            {
-              name: "tiktok",
               link: "https://www.instagram.com/javduzen/",
             },
           ]}
