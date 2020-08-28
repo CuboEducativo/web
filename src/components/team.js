@@ -107,6 +107,7 @@ export default () => {
   const { javier, javi, gabriel, daniel } = useTeamImages()
   return (
     <div
+      id="equipo"
       css={css`
         ${tw`container mx-auto py-10 flex flex-col justify-center items-center`}
       `}
