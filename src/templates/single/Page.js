@@ -9,7 +9,6 @@ export const query = graphql`
     page: wpPage(id: { eq: $id }) {
       title
       content
-      excerpt
       featuredImage {
         node {
           remoteFile {
