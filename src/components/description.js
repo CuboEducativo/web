@@ -146,7 +146,7 @@ export default () => {
             text="Seguimos la trayectoria de aprendizaje del estudiante, recopilando información necesaria para ir mejorando los procesos."
           />
         </div>
-        <IsVisible once>
+        {/* <IsVisible once>
           {isVisible => (
             <>
               {isVisible ? (
@@ -156,7 +156,7 @@ export default () => {
               )}
             </>
           )}
-        </IsVisible>
+        </IsVisible> */}
       </div>
     </div>
   )
