@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import tw from "twin.macro"
 import { css } from "@emotion/core"
 import { Link } from "gatsby"
 
 export default () => {
+  const [open, setOpen] = useState(false)
+  const toggleOpen = () => setOpen(open => !open)
   return (
     <nav
       id="header"
@@ -27,7 +29,7 @@ export default () => {
           `}
         >
           <button
-            id="nav-toggle"
+            onClick={toggleOpen}
             css={css`
               ${tw`flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none`}
             `}
@@ -47,7 +49,8 @@ export default () => {
 
         <div
           css={css`
-            ${tw`w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20`}
+            ${tw`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20`}
+            ${!open ? "display: none;" : ""}
           `}
           id="nav-content"
         >
@@ -78,7 +81,7 @@ export default () => {
             >
               <Link
                 css={css`
-                  ${tw`inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 px-4`}
+                  ${tw`inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 px-4 mb-4 lg:mb-0`}
                 `}
                 to="/blog"
               >
