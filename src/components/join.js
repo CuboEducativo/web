@@ -61,7 +61,7 @@ export default () => {
               ${tw`md:w-1/2 md:pr-8 lg:pr-16 lg:p-20 p-5`}
             `}
           >
-            <p
+            {/* <p
               css={css`
                 ${tw`text-2xl text-secondary-700 mb-4 inline`}
               `}
@@ -161,7 +161,7 @@ export default () => {
                   </>
                 )}
               </IsVisible>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
