@@ -253,11 +253,14 @@ export default () => {
   const [address, setAddress] = useState("")
   const [instagram, setInstagram] = useState("")
   const [name, setName] = useState("")
+  const [loading, setLoading] = useState(false)
 
-  const onSubmit = event => {
-    const numbers = value.map(({ value }) => value)
-    requestPayment({ numbers, email, address, instagram, name })
+  const onSubmit = async event => {
     event.preventDefault()
+    setLoading(true)
+    const numbers = value.map(({ value }) => value)
+    await requestPayment({ numbers, email, address, instagram, name })
+    setLoading(false)
   }
   return (
     <Container>
@@ -345,8 +348,9 @@ export default () => {
           <Price n={value.length} />
 
           <button
+            disabled={loading}
             css={css`
-              ${tw`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded`}
+              ${tw`bg-blue-500 hover:bg-blue-700 disabled:opacity-75  text-white font-bold py-2 px-4 rounded`}
             `}
             type="submit"
           >
