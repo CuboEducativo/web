@@ -36,16 +36,21 @@ const Donar: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             ${tw`text-center text-2xl`}
           `}
         >
-          ¡Muchas gracias por tu compra!
+          ¡Muchas gracias por participar!
         </p>
         <p
           css={css`
             ${tw`text-center text-xl lg:px-6`}
           `}
         >
-          No olvides seguirnos en instragram{" "}
+          Lo hacemos por un buen motivo y con tu ayuda lograremos nuestro
+          anhelado objetivo. <br />
+          Que sean unas grandes fiestas con empanadas, anticucho y vino te
+          esperamos en instagram somos los del{" "}
           <a href="https://www.instagram.com/cuboeducativo/">@cuboeducativo</a>.
-          Ahí será el sorteo el día 23/09/2020.
+          <br />
+          <br />
+          Sorteo el día 23/09/2020.
         </p>
       </div>
     </Container>
