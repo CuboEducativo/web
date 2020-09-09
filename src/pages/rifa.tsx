@@ -297,6 +297,7 @@ export default () => {
             value={name}
             setValue={setName}
             placeholder="Nombre"
+            required
             name="name"
             text="Nombre completo"
           />
@@ -332,12 +333,12 @@ export default () => {
             setValue={setInstagram}
             placeholder="Tu usuario"
             name="instagram"
-            text="Usuario instagram"
+            text="Usuario instagram (opcional)"
           />
           <Input
             value={address}
             setValue={setAddress}
-            text="Dirección (para recibir premio)"
+            text="Dirección (para recibir premio, opcional)"
             placeholder="Av siempreviva 742..."
             name="address"
           />
