@@ -92,7 +92,7 @@ export default () => {
               to="/donar"
               id="navAction"
               css={css`
-                ${tw`mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded mt-4 lg:mt-0 mx-5 py-4 px-8 shadow opacity-75 bg-primary`}
+                ${tw`mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded mt-4 lg:mt-0 mx-5 lg:mx-5 py-4 px-8 shadow opacity-75 bg-primary`}
               `}
             >
               Donar
