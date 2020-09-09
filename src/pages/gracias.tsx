@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { PageProps, graphql, Link } from "gatsby"
 
 import tw from "twin.macro"
 import { css } from "@emotion/core"
 import Confetti from "react-confetti"
-import useWindowSize from "react-use/lib/useWindowSize"
+import { useWindowSize } from "@react-hook/window-size"
 
 import SEO from "../components/seo"
 import Container from "../components/container"
@@ -16,7 +16,15 @@ type DataProps = {
 }
 
 const Donar: React.FC<PageProps<DataProps>> = ({ data, path }) => {
-  const { width, height } = useWindowSize()
+  const [size, setSize] = useState({ width: 100, height: 100 })
+  const [_width, _height] = useWindowSize()
+  useEffect(() => {
+    setSize({
+      width: _width,
+      height: _height,
+    })
+  }, [])
+  const { width, height } = size
 
   return (
     <Container
