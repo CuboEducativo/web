@@ -4,6 +4,7 @@ import { PageProps, graphql, Link } from "gatsby"
 import tw from "twin.macro"
 import { css } from "@emotion/core"
 import Confetti from "react-confetti"
+import useWindowSize from "react-use/lib/useWindowSize"
 
 import SEO from "../components/seo"
 import Container from "../components/container"
@@ -15,10 +16,38 @@ type DataProps = {
 }
 
 const Donar: React.FC<PageProps<DataProps>> = ({ data, path }) => {
+  const { width, height } = useWindowSize()
+
   return (
-    <Container>
-      <SEO title="Gracias" />
-      <Confetti recycle={false} />
+    <Container
+      css={css`
+        ${tw`flex content-center items-center lg:items-start lg:pt-40`}
+      `}
+    >
+      <div
+        css={css`
+          ${tw`container mx-auto px-6`}
+        `}
+      >
+        <SEO title="Gracias" />
+        <Confetti recycle={false} width={width} height={height} />
+        <p
+          css={css`
+            ${tw`text-center text-2xl`}
+          `}
+        >
+          ¡Muchas gracias por tu compra!
+        </p>
+        <p
+          css={css`
+            ${tw`text-center text-xl lg:px-6`}
+          `}
+        >
+          No olvides seguirnos en instragram{" "}
+          <a href="https://www.instagram.com/cuboeducativo/">@cuboeducativo</a>.
+          Ahí será el sorteo el día 23/09/2020.
+        </p>
+      </div>
     </Container>
   )
 }
