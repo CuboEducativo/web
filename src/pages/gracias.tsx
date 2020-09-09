@@ -51,10 +51,24 @@ const Donar: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             ${tw`text-center text-xl lg:px-6`}
           `}
         >
-          Lo hacemos por un buen motivo y con tu ayuda lograremos nuestro
-          anhelado objetivo. <br />
-          Que sean unas grandes fiestas con empanadas, anticucho y vino te
-          esperamos en instagram somos los del{" "}
+          Aro aro aro...
+          <br />
+          Muchas gracias por participar
+          <br />
+          lo hacemos por un buen motivo
+          <br />
+          y con tu ayuda lograremos
+          <br />
+          nuestro anhelado objetivo.
+          <br />
+          <br />
+          Que sean unas grandes fiestas
+          <br />
+          con empanadas, anticucho y vino
+          <br />
+          te esperamos en instagram
+          <br />
+          somos los del{" "}
           <a href="https://www.instagram.com/cuboeducativo/">@cuboeducativo</a>.
           <br />
           <br />
