@@ -13,6 +13,7 @@ import "antd/dist/antd.css"
 
 import Container from "../components/container"
 import SEO from "../components/seo"
+import Navbar from "../components/navbar"
 
 const errorNotification = numbers => {
   notification.error({
@@ -261,6 +262,7 @@ export default () => {
   return (
     <Container>
       <SEO title="Rifa" />
+      <Navbar />
       <div
         css={css`
           ${tw`container mx-auto px-6`}
@@ -304,7 +306,7 @@ export default () => {
             `}
             htmlFor="numbers"
           >
-            Numeros
+            Números
           </label>
           <AsyncSelect
             id="numbers"
