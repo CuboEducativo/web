@@ -310,7 +310,7 @@ export default () => {
             `}
             htmlFor="numbers"
           >
-            Números
+            Números (puedes elegir más de uno)
           </label>
           <AsyncSelect
             id="numbers"
