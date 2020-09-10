@@ -231,7 +231,10 @@ const loadOptions = async () => {
   return data
 }
 
-const requestPayment = async (params: {}, callback?: () => void) => {
+const requestPayment = async (
+  params: {},
+  callback?: (paymentUrl: string) => void
+) => {
   const response = await axios.post(
     `${process.env.GATSBY_API_URL}/buyNumbers`,
     params
@@ -240,10 +243,8 @@ const requestPayment = async (params: {}, callback?: () => void) => {
     errorNotification(response.data["not_available"])
   }
   if (response.data?.action == "reserved") {
-    window && window.open(response.data["payment_url"], "_blank")
-  }
-  if (response.status == 200) {
-    callback && callback()
+    window && window.open(response.data["payment_url"])
+    callback && callback(response.data["payment_url"])
   }
 }
 
@@ -254,12 +255,20 @@ export default () => {
   const [instagram, setInstagram] = useState("")
   const [name, setName] = useState("")
   const [loading, setLoading] = useState(false)
+  const [fallback, setFallback] = useState(false)
+  const [url, setUrl] = useState("")
 
   const onSubmit = async event => {
     event.preventDefault()
     setLoading(true)
     const numbers = value.map(({ value }) => value)
-    await requestPayment({ numbers, email, address, instagram, name })
+    await requestPayment(
+      { numbers, email, address, instagram, name },
+      (paymentUrl: string) => {
+        setUrl(paymentUrl)
+        setFallback(true)
+      }
+    )
     setLoading(false)
   }
   return (
@@ -357,6 +366,12 @@ export default () => {
             Ir a pago
           </button>
         </form>
+        {fallback && (
+          <>
+            <p>Redireccionando a pago, si no pasa nada</p>
+            <a href={url}>haz click aca</a>
+          </>
+        )}
         <Premios />
       </div>
     </Container>
