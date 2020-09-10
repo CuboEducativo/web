@@ -4,7 +4,8 @@ import axios from "axios"
 import tw from "twin.macro"
 import CountUp from "react-countup"
 import { css } from "@emotion/core"
-import { notification } from "antd"
+import { notification, Modal } from "antd"
+
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
@@ -14,6 +15,8 @@ import "antd/dist/antd.css"
 import Container from "../components/container"
 import SEO from "../components/seo"
 import Navbar from "../components/navbar"
+
+const ReachableContext = React.createContext("")
 
 const errorNotification = numbers => {
   notification.error({
@@ -243,9 +246,21 @@ const requestPayment = async (
     errorNotification(response.data["not_available"])
   }
   if (response.data?.action == "reserved") {
-    window && window.open(response.data["payment_url"])
+    window && (window.location.href = response.data["payment_url"])
     callback && callback(response.data["payment_url"])
   }
+}
+
+const config = {
+  title: "Redireccionando",
+  content: (
+    <>
+      <p>Redireccionando a pago, si aún no se abre la ventana</p>
+      <ReachableContext.Consumer>
+        {url => <a href={url}>haz click aca</a>}
+      </ReachableContext.Consumer>
+    </>
+  ),
 }
 
 export default () => {
@@ -256,7 +271,8 @@ export default () => {
   const [name, setName] = useState("")
   const [loading, setLoading] = useState(false)
   const [fallback, setFallback] = useState(false)
-  const [url, setUrl] = useState("")
+  const [url, setUrl] = useState("url")
+  const [modal, contextHolder] = Modal.useModal()
 
   const onSubmit = async event => {
     event.preventDefault()
@@ -267,9 +283,9 @@ export default () => {
       (paymentUrl: string) => {
         setUrl(paymentUrl)
         setFallback(true)
+        modal.info(config)
       }
     )
-    setLoading(false)
   }
   return (
     <Container>
@@ -366,14 +382,11 @@ export default () => {
             Ir a pago
           </button>
         </form>
-        {fallback && (
-          <>
-            <p>Redireccionando a pago, si no pasa nada</p>
-            <a href={url}>haz click aca</a>
-          </>
-        )}
         <Premios />
       </div>
+      <ReachableContext.Provider value={url}>
+        {contextHolder}
+      </ReachableContext.Provider>
     </Container>
   )
 }
