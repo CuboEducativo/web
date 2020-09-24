@@ -97,15 +97,17 @@ export default () => {
             >
               Donar
             </Link>
-            <Link
-              to="/rifa"
-              id="navAction"
-              css={css`
-                ${tw`mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 bg-primary`}
-              `}
-            >
-              Rifa
-            </Link>
+            {/* 
+          disabled
+          <Link
+            to="/rifa"
+            id="navAction"
+            css={css`
+              ${tw`mx-auto lg:mx-0 hover:underline text-white font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 bg-primary`}
+            `}
+          >
+            Rifa
+          </Link> */}
           </ul>
         </div>
       </div>
