@@ -183,37 +183,37 @@ const Premios = () => {
         <Premio
           text="Kit día de SPA"
           instagram="bombastic.bath"
-          imgUrl="https://instagram.fscl28-1.fna.fbcdn.net/v/t51.2885-19/s150x150/116217349_151631083246355_9088508896380575516_n.jpg?_nc_ht=instagram.fscl28-1.fna.fbcdn.net&_nc_ohc=jeTpx4lkA3AAX_hgJnt&oh=158b113dff05ee3afbf28daa82718c0b&oe=5F80BB9B"
+          imgUrl="https://instagram.fscl16-1.fna.fbcdn.net/v/t51.2885-19/s320x320/116217349_151631083246355_9088508896380575516_n.jpg?tp=1&_nc_ht=instagram.fscl16-1.fna.fbcdn.net&_nc_ohc=pqhEdkVIV5oAX8SB-E6&tn=VrhIrcgouAkD1iJN&edm=ABfd0MgBAAAA&ccb=7-4&oh=2c867ff706bf5a10ad3e97037f23c04b&oe=60D41C63&_nc_sid=7bff83"
         />
         <Premio
           text="22 conitos mixtos"
           instagram="barqui.cl"
-          imgUrl="https://instagram.fscl28-1.fna.fbcdn.net/v/t51.2885-19/s150x150/115822584_316356879400053_5651870647172236590_n.jpg?_nc_ht=instagram.fscl28-1.fna.fbcdn.net&_nc_ohc=uqeSKBlJ7R4AX_BbrhN&oh=e6d02f854e540136658dac88bf462317&oe=5F814C4D"
+          imgUrl="https://instagram.fscl16-1.fna.fbcdn.net/v/t51.2885-19/s320x320/115822584_316356879400053_5651870647172236590_n.jpg?tp=1&_nc_ht=instagram.fscl16-1.fna.fbcdn.net&_nc_ohc=PdLmSdIuOikAX8wxG3C&edm=ABfd0MgBAAAA&ccb=7-4&oh=7885794e3cc1aae7263140a48fe4edef&oe=60D48E75&_nc_sid=7bff83"
         />
         <Premio
           text="Balance board"
           instagram="balancehomechile"
-          imgUrl="https://instagram.fscl28-1.fna.fbcdn.net/v/t51.2885-19/s150x150/101459851_714599842687990_3623162599052410880_n.jpg?_nc_ht=instagram.fscl28-1.fna.fbcdn.net&_nc_ohc=9Fv8kJHIDvIAX-8UR48&oh=d271b6099978c47770361ecac05e7327&oe=5F8102D4"
+          imgUrl="https://instagram.fscl16-1.fna.fbcdn.net/v/t51.2885-19/s320x320/141918415_769530957247581_2050367095199044574_n.jpg?tp=1&_nc_ht=instagram.fscl16-1.fna.fbcdn.net&_nc_ohc=g1bstqxYEt8AX9GJken&edm=ABfd0MgBAAAA&ccb=7-4&oh=1c5ab70bcecfda5bbbd5eb295697fcbe&oe=60D3CB66&_nc_sid=7bff83"
         />
         <Premio
           text="Torta Juana (6-8 personas)"
           instagram="masmigaschile"
-          imgUrl="https://instagram.fscl28-1.fna.fbcdn.net/v/t51.2885-19/s150x150/84370041_503151847034126_3254376563621232640_n.jpg?_nc_ht=instagram.fscl28-1.fna.fbcdn.net&_nc_ohc=xKeak3YDTgAAX8Q9lXC&oh=fa0efdfe520a574e8c7d1e04206d789b&oe=5F80F0C4"
+          imgUrl="https://instagram.fscl16-1.fna.fbcdn.net/v/t51.2885-19/s320x320/84370041_503151847034126_3254376563621232640_n.jpg?tp=1&_nc_ht=instagram.fscl16-1.fna.fbcdn.net&_nc_ohc=DbIoytlEqo0AX-xB48n&edm=ABfd0MgBAAAA&ccb=7-4&oh=14974d6a55a888fe8a915c9129e1514f&oe=60D38574&_nc_sid=7bff83"
         />
         <Premio
           text="Cuaderno personalizado"
           instagram="abicolors.cl"
-          imgUrl="https://instagram.fscl28-1.fna.fbcdn.net/v/t51.2885-19/s150x150/117193118_936229563509737_4247367268091974917_n.jpg?_nc_ht=instagram.fscl28-1.fna.fbcdn.net&_nc_ohc=5kuxXgCP_TgAX9edtZ_&oh=69bebf78834d28696472fc3774114afd&oe=5F82C022"
+          imgUrl="https://instagram.fscl16-1.fna.fbcdn.net/v/t51.2885-19/s320x320/117193118_936229563509737_4247367268091974917_n.jpg?tp=1&_nc_ht=instagram.fscl16-1.fna.fbcdn.net&_nc_ohc=EG00IjVLtmMAX-yXwRT&edm=ABfd0MgBAAAA&ccb=7-4&oh=4836117742118a60503275452c701550&oe=60D3D69A&_nc_sid=7bff83"
         />
         <Premio
           text="3 Sets de cubiertos de madera nativa"
           instagram="manelun.sustentable"
-          imgUrl="https://instagram.fscl28-1.fna.fbcdn.net/v/t51.2885-19/s150x150/53364432_643694929426416_2345052512983187456_n.jpg?_nc_ht=instagram.fscl28-1.fna.fbcdn.net&_nc_ohc=wH1W_JPeVSMAX9s8-lD&oh=fe24918bb52affa2ff0d4a13a9ea78c3&oe=5F80A72A"
+          imgUrl="https://instagram.fscl16-1.fna.fbcdn.net/v/t51.2885-19/s320x320/53364432_643694929426416_2345052512983187456_n.jpg?tp=1&_nc_ht=instagram.fscl16-1.fna.fbcdn.net&_nc_ohc=UxTwiAFSp60AX-j4D_x&edm=ABfd0MgBAAAA&ccb=7-4&oh=cc57c0f14c1b6428294ebad928eb15ee&oe=60D34DDA&_nc_sid=7bff83"
         />
         <Premio
           text="Glassify"
           instagram="glassify.cl"
-          imgUrl="https://instagram.fscl28-1.fna.fbcdn.net/v/t51.2885-19/s150x150/116762157_309575910194615_3672900364243995518_n.jpg?_nc_ht=instagram.fscl28-1.fna.fbcdn.net&_nc_ohc=enhsHQKxIdIAX9G_JWb&oh=db31d1f684f414abfc8d46925133628d&oe=5F80EB2A"
+          imgUrl="https://instagram.fscl16-1.fna.fbcdn.net/v/t51.2885-19/s320x320/162195441_449275233163391_2100850888102821395_n.jpg?tp=1&_nc_ht=instagram.fscl16-1.fna.fbcdn.net&_nc_ohc=xUCrVmZSfJcAX9LSDYo&edm=ABfd0MgBAAAA&ccb=7-4&oh=adf4b807c77537532c9599d2159c14c4&oe=60D3C4F0&_nc_sid=7bff83"
         />
         <Premio
           text="Cabernet Sauvignon Kenos"
